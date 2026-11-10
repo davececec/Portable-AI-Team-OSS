@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "team_version": "4.2.0",
+  "capsule_id": "portable-ai-team-20261010-v3",
+  "released_at": "2026-11-06",
+  "previous_version": "4.1.0",
+  "path_contract": "Portable-AI-Team",
+  "notes": "AI-Team/versions/V4.2.md"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "updated": "2026-11-06",
+  "note": "角色按能力档位选模型；模型换代只改本文件，不改角色定义、桥接文件或工单模板。",
+  "tiers": {
+    "fast": {
+      "description": "常规实现、批量读取、测试执行",
+      "codex": "default/glm5-3-flash",
+      "trae": "default/glm5-3-flash",
+      "antigravity": "default/glm5-3-flash",
+      "claude": "claude-haiku-4.5"
+    },
+    "standard": {
+      "description": "中等复杂度实现、独立测试生成",
+      "codex": "default/qwen36-35b-a3b",
+      "trae": "default/qwen36-35b-a3b",
+      "antigravity": "default/qwen36-35b-a3b",
+      "claude": "claude-sonnet-4.5"
+    },
+    "high-risk": {
+      "description": "架构、关键链路、数据库迁移、安全权限",
+      "codex": "default/deepseek-v4-flash",
+      "trae": "default/deepseek-v4-flash",
+      "antigravity": "default/deepseek-v4-flash",
+      "claude": "claude-opus-4.1"
+    },
+    "vision": {
+      "description": "截图走查、图表渲染、UI 视觉验收",
+      "codex": "default/qwen38-27b",
+      "trae": "default/qwen38-27b",
+      "antigravity": "default/qwen38-27b",
+      "claude": "claude-sonnet-4.5"
+    }
+  },
+  "roles": {
+    "agent-b": {
+      "default": "fast",
+      "high-risk": "high-risk"
+    },
+    "agent-c": {
+      "design": "high-risk",
+      "vision": "vision"
+    },
+    "agent-d": {
+      "default": "standard"
+    },
+    "test-generation": "standard"
+  }
+}

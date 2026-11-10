@@ -1,0 +1,39 @@
+# ===== 敏感凭据（严禁上传，团队约定）=====
+Portable-AI-Team/LLM配置.json
+Portable-AI-Team/AI-Team/memory/credentials.md
+**/LLM配置.json
+**/credentials.md
+**/*.token
+**/*.secret
+
+# ===== 本地 / 运行态文件 =====
+Portable-AI-Team/state/
+Portable-AI-Team/团队状态.json
+/团队状态.json
+/Python路径.txt
+Portable-AI-Team/.codex-tmp/
+.codex-tmp/
+.codex/
+.agents/
+.trae/
+.workbuddy/
+.portable-ai-team.json
+/PROGRESS.md
+
+# ===== 打包产物 =====
+/dist/
+*.rar
+*.zip
+*.7z
+
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+
+# ===== 临时合并/同步脚本 =====
+/merge_changelog.py
+/merge_readme.py
+/merge_rest.py
+/merge_tests.py
+/sync_v310.ps1
